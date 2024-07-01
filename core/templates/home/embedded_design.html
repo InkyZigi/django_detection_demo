@@ -1,0 +1,134 @@
+{% extends 'home/nav.html' %}
+
+{% block content %}
+
+
+  <main id="site-content" data-v-component-post>
+
+    <!-- Single Blog Post Thumb -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div>
+            <h1 class="text-center" data-v-if-not="post.img" data-v-post-name>Embedded System Design</h1>
+
+            <div class="" data-v-post-content>
+              <p>
+                  本作品是基于<strong>深度学习</strong>的小物体表面缺陷检测及分拣系统， 运用教师-学生网络模型，搭建了一款<strong>轻量化、适应性高</strong>的智能检测系统，通过SMB协议的文件服务器， 来进行<strong>高效、快捷的数据传输</strong>，并运用机械臂拍摄检测物体并实时分拣，最后在网页端，运用<strong>前端、后端、数据库等技术</strong>， 以便观测各物体缺陷检测情况，大体上模拟了工业生产制造中，质量监管全过程中的作业情况，以满足现实的生产需求。
+              </p>
+              <p>
+                  本项目旨在工业环境中，实现对小物件表面缺陷的<strong>智能化检测</strong>，期望打破传统的生产流程与生产模式， 追求对生产资源的<strong>更高效、更灵活的配置</strong>以及该检测技术规模化应用的可能性。
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <hr class="my-5 border">
+
+
+  <section class="d-flex showcase-1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12">
+          <div class="col-text">
+            <h3>Function Summary</h3>
+            <div class="d-flex">
+              <i class="la la-business-time la-lg"></i>
+              <p><strong>Integrated Intelligent Inspection System: </strong>This system realizes a complete automated defect detection process through the use of a robotic arm, OpenCV image processing, Orin control system, PYQT interface, and web-based application. The robotic arm is responsible for identifying and shooting objects, sorting them as good or bad, and exchanging information with the defect detection system through the file server, ultimately displaying the test results to the users.</p>
+            </div>
+            <div class="d-flex">
+              <i class="la la-user-clock la-lg"></i>
+              <p><strong>Efficient Information Management and Sharing: </strong>The file server plays a central role in this system, not only for storing image data but also as a hub for information exchange. The robotic arm and the defect detection system exchange their working status through text documents on the file server, while users can view test results and historical data in real-time through the web interface, achieving efficient data management and convenient sharing.</p>
+            </div>
+            <div>
+              <table class="table table-striped table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2">Function Description : </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">机械臂</th>
+                    <td>
+                      识别并拍摄：机械臂通过OpenCV控制其摄像头对物体进行边缘检测，如有物体符合设定的形状与大小，则拍摄、截取并存储至文件服务器。<br>
+                      分拣物体：机械臂通过读取Orin的异常计算结果来判断物件好坏，并将物体放入指定的地方。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">缺陷检测</th>
+                    <td>
+                      检测图片：对机械臂拍摄入实物图像进行缺陷检测并将生成的一系列缺陷检测图片显示在PyQT界面上，以便用户查看。<br>
+                      输出数据：将检测完成的各图片写入文件服务器中指定位置，以便于数据统计。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">网页端</th>
+                    <td>
+                      实时反馈：用户可在任意设备中打开本团队的报告生成页面，实时查看当前缺陷检测生成的所有图像及检测结果。<br>
+                      历史数据查询：用户可在本团队的网站的历史数据页面中对所有已经检测过的图像数据与检测结果进行查询获取。<br>
+                      报告生成：用户查询图像数据的结果将以一系列缺陷检测图像的形式显示在网页上。
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">文件服务器</th>
+                    <td>
+                      数据存储：各机器可访问文件服务器，将图像存储至服务器中以便缺陷检测或网页端读取。<br>
+                      信息交换：各机器可通过文件服务器直接交换图像信息与工作状态，为检测模块提供了迅速且便捷的数据交换。
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-img">
+          <div class="video float-end">
+            <img src="img/sections/product/scene_2.jpg" alt="Languages list" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d-flex showcase-1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 col-img">
+          <div class="video float-end">
+            <img src="img/sections/product/jetson-agx-orin.jpg" alt="Languages list" loading="lazy">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="col-text">
+            <h3>作品特色</h3>
+            <div class="d-flex">
+              <i class="la la-balance-scale-right la-lg"></i>
+              <p>
+                  本作品使用机械臂、开发板、数据库等软硬件实现人工智能应用系统。 本团队采用了教师-学生网络模型，在教师模型的帮助训练下，得到更加轻量化、性能相仿的学生模型，以改善缺陷检测的环境。同时本团队还采用1+N的分布式结构，可以用<strong>一台Jeston AGX Orin 配合多台机械臂</strong>进行缺陷检测，极大降低了工业中流水线生产的成本，且单个机械臂的损坏不会对系统整体运行造成影响。
+              </p>
+            </div>
+            <div class="d-flex">
+              <i class="la la-file-alt la-lg"></i>
+              <p>
+                  由于采用SMB服务协议的网络共享技术（文件服务器），机器间的信息传递与交换迅速且流畅，提高了整体的运行效率。经过试验，本团队编写的程序<strong>可支持跨平台、跨架构、跨系统运行</strong>，支持在任何系统（Windows，Linux，MAC）上运行，同时可以在复杂或精简指令集的设备上运行。
+              </p>
+            </div>
+             <h4>特色功能:</h4>
+              <p>  一个Orin与多台机械臂交互工作，并可以将缺陷检测的图像结果实时显示在网页端，最后以报告的形式展示出来。</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}

@@ -25,8 +25,11 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('tech-support/', views.tech_support, name='tech_support'),
-    path('design/', views.design, name='design'),
+    path('hardware-support/', views.hardware, name='hardware_support'),
+    path('web-design/', views.web_design, name='web_design'),
     path('system-design/', views.system_design, name='system_design'),
+    path('embedded-design/', views.embedded_design, name='embedded_design'),
+    path('privacy/', views.privacy, name='privacy'),
 ]
 
 urlpatterns += [
