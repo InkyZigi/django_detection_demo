@@ -1,0 +1,23 @@
+/*
+遵循 CC 4.0 BY-SA 版权协议，参考链接：https://blog.csdn.net/qq_44273429/article/details/134439964
+*/
+
+#searchInput {
+  margin-bottom: 10px;
+}
+
+.searchResults {
+  position: absolute;
+  top: 60px; /* 调整弹窗的垂直位置 */
+  right: 3rem;
+  z-index: 999; /* 确保弹窗在最上层 */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 15rem;
+  display: none;
+}
+
+.searchResults li {
+  list-style-type: none;
+}

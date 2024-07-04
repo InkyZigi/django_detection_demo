@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<links>
+    <link>
+        <url>http://127.0.0.1:8000/</url>
+        <title>首页 &amp; 导航 &amp; index &amp; navigation</title>
+        <name>首页</name>
+    </link>
+    <!--  Information  -->
+    <link>
+        <url>http://127.0.0.1:8000/about/</url>
+        <title>关于我们 &amp; about us</title>
+        <name>关于我们</name>
+    </link>
+    <link>
+        <url>http://127.0.0.1:8000/contact/</url>
+        <title>联系我们 &amp; 手机邮箱 &amp; contact us &amp; phone &amp; mail</title>
+        <name>联系我们</name>
+    </link>
+    <link>
+        <url>http://127.0.0.1:8000/privacy/</url>
+        <title>隐私政策 &amp; 条款与细则 &amp; privacy policy &amp; conditions</title>
+        <name>隐私政策</name>
+    </link>
+    <!--  Support  -->
+	<link>
+	    <url>http://127.0.0.1:8000/tech-support/</url>
+	    <title>软件技术支持 &amp; software technology support</title>
+        <name>软件技术支持</name>
+	</link>
+	<link>
+	    <url>http://127.0.0.1:8000/hardware-support/</url>
+	    <title>硬件技术支持 &amp; hardware technology support &amp; jetmax &amp; orin</title>
+        <name>硬件技术支持</name>
+	</link>
+    <!--  Design  -->
+    <link>
+	    <url>http://127.0.0.1:8000/web-design/</url>
+	    <title>网站网页页面设计 &amp; 前端设计，后端设计，数据库设计 &amp; website design &amp; frontend design, backend design, database design</title>
+        <name>前端设计</name>
+	</link>
+    <link>
+	    <url>http://127.0.0.1:8000/system-design/</url>
+	    <title>系统设计，模块设计，架构设计，软件 &amp; system design, module design, struture design, software &amp; python, pytorch-lightning, django, postgresql </title>
+        <name>系统设计</name>
+	</link>
+    <link>
+	    <url>http://127.0.0.1:8000/embedded-design/</url>
+	    <title>嵌入式系统设计，嵌入端设计，硬件 &amp; embedded system design, hardware</title>
+        <name>嵌入端设计</name>
+	</link>
+</links>
