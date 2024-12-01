@@ -63,7 +63,8 @@
 │   ├ ─ staticfiles				# Useless, but do not delete
 │   ├ ─ media					# Upload files
 │   ├ ─ manage.py				# Project initiation
-│   ├ ─ main.py					# Fast preject initiation
+│   ├ ─ main.py					# Fast project initiation
+│   ├ ─ uwsgi.ini				# Uwsgi configuration 
 │   └ ─ __inin__.py
 ├── requirements.txt
 └── README.md
@@ -116,6 +117,40 @@
 ## Detection
 
 ​	Please take it as reference: [STFPM_AnomalyDetection](https://github.com/InkyZigi/STFPM_AnomalyDetection)
+
+## Deployment on Linux
+
+1. activate the python env
+
+   ```bash
+   $ cd home/environment/web/bin
+   $ source activate
+   ```
+
+2. start uwsgi
+
+   ```bash
+   $ cd /home/project_XXX
+   $ uwsgi --ini uwsgi.ini
+   ```
+
+   
+
+3. restart nginx
+
+   ```bash
+   $ nginx -s reload
+   ```
+
+   
+
+4. test for web
+
+```bash
+$ curl 0.0.0.0:80
+```
+
+
 
 ## Weakness
 
